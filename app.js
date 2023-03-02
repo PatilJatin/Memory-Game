@@ -63,7 +63,7 @@ function createBoard() {
     for ( let i= 0 ; i < 12 ; i++){
         
         const card = document.createElement('img');
-        card.setAttribute('src','./images/blank.png');
+        card.setAttribute('src','./images/blank1.png');
         card.setAttribute('data-id',i);
         card.addEventListener('click', flipCard);
         display.append(card); 
@@ -92,8 +92,8 @@ function checkMatch() {
     console.log("calling match");
     if(option1 == option2){
         console.log("clicked same image!");
-        cards[option1].setAttribute('src' , "./images/blank.png");
-        cards[option2].setAttribute('src' , "./images/blank.png");
+        cards[option1].setAttribute('src' , "./images/blank1.png");
+        cards[option2].setAttribute('src' , "./images/blank1.png");
     }
     else if(cardsChosen[0] == cardsChosen[1]){
         console.log("matched");
@@ -104,8 +104,8 @@ function checkMatch() {
         cardsWon.push(cardsChosen);
     }
     else{
-        cards[option1].setAttribute('src' , "./images/blank.png");
-        cards[option2].setAttribute('src' , "./images/blank.png");
+        cards[option1].setAttribute('src' , "./images/blank1.png");
+        cards[option2].setAttribute('src' , "./images/blank1.png");
         console.log("Sorry try again! ");
         
     }
